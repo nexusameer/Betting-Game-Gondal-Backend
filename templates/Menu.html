@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Roulette Table</title>
+    <style>
+        /* Custom styles for the roulette table */
+        .roulette-table {
+            width: 600px;
+            height: 600px;
+            position: relative;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: #222;
+            margin: 50px auto;
+        }
+
+        /* Common styling for both dark and white numbers */
+        .number {
+            position: absolute;
+            font-size: 1.5rem;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 50%;
+        }
+
+        /* Styling for dark numbers */
+        .dark {
+            background-color: #333;
+        }
+
+        /* Styling for white numbers */
+        .white {
+            background-color: #ddd;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+
+    <div class="roulette-table" id="rouletteTable"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const rouletteTable = document.getElementById("rouletteTable");
+
+            for (let i = 0; i < 37; i++) {
+                const numberElement = document.createElement("div");
+                numberElement.textContent = i;
+                numberElement.classList.add("number");
+                numberElement.classList.add(i % 2 === 0 ? "dark" : "white");
+                numberElement.style.transform = `rotate(${i * 10}deg)`;
+                rouletteTable.appendChild(numberElement);
+            }
+
+            // Adding zero with special styling
+            const zeroElement = document.createElement("div");
+            zeroElement.textContent = "0";
+            zeroElement.classList.add("number", "white");
+            zeroElement.style.transform = "rotate(0deg)";
+            zeroElement.style.fontSize = "1.8rem";
+            zeroElement.style.backgroundColor = "#ff6347";
+            rouletteTable.appendChild(zeroElement);
+        });
+    </script>
+
+</body>
+
+</html>

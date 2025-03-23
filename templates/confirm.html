@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Simple Email Template Example</title>
+    
+    <style>
+
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #1d1c1c;">
+    <table cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td align="center" style="padding: 50px 0;">
+                <table cellpadding="0" cellspacing="0" width="600"
+                    style="background-color: #222020; border-radius: 20px;">
+                    <tr>
+                        <td align="center" style="padding: 40px;">
+                            <h3 class="text-2xl text-gold" style="margin: 0;">Thanks for signing up for VetoGaming!</h3>
+                            <div style="margin-top: 20px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24"
+                                    fill="url(#grad)" style="fill: url(#grad);">
+                                    <defs>
+                                        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" style="stop-color: #a2682a" />
+                                            <stop offset="8%" style="stop-color: #be8c3c" />
+                                            <stop offset="18%" style="stop-color: #be8c3c" />
+                                            <stop offset="27%" style="stop-color: #d3b15f" />
+                                            <stop offset="35%" style="stop-color: #faf0a0" />
+                                            <stop offset="40%" style="stop-color: #ffffc2" />
+                                            <stop offset="50%" style="stop-color: #faf0a0" />
+                                            <stop offset="58%" style="stop-color: #d3b15f" />
+                                            <stop offset="67%" style="stop-color: #be8c3c" />
+                                            <stop offset="77%" style="stop-color: #b17b32" />
+                                            <stop offset="83%" style="stop-color: #bb8332" />
+                                            <stop offset="88%" style="stop-color: #d4a245" />
+                                            <stop offset="93%" style="stop-color: #e1b453" />
+                                            <stop offset="100%" style="stop-color: #a4692a" />
+                                        </linearGradient>
+                                    </defs>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                                        d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76" />
+                                </svg>
+                            </div>
+                            <p class="text-gold" style="margin-top: 20px;">We're happy you're here. Let's get your email
+                                address verified:</p>
+                            <div style="margin-top: 20px;">
+                                <a href="{{link}}" class="btn" style="color: #000; text-decoration: none;">Click to
+                                    Verify Email</a>
+                            </div>
+                            <p class="mt-4 text-sm text-gold" style="margin-top: 20px;">If you’re having trouble
+                                clicking the "Verify Email Address" button, copy and paste the URL below into your web
+                                browser:
+                                <a href="{{link}}" class="text-gold"
+                                    style="color: #a2682a; text-decoration: underline;">{{link}}</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
