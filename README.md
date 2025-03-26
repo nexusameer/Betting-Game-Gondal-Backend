@@ -115,3 +115,4 @@ This Django application provides the following API endpoints:
     * Authentication is handled using Django Rest Framework's authentication mechanisms. Check the code for the specific implementation.
 
 ## Project Structure
+
