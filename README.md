@@ -15,6 +15,7 @@ This repository contains the backend Django application for a betting game. It p
 
 ## Prerequisites
 
+
 Before you begin, ensure you have the following installed:
 
 * **Python 3.x:** Django requires Python.
